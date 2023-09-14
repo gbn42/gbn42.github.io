@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver.T</title>
+    <link rel="stylesheet" href="Style\style.css">
+</head>
+<body>
+    <Div id="header">
+        <div class="container">
+            <nav id>
+                <img src="Images\Oliver logo.png" class="logo">
+                <ul>
+                    <li><a href="">Hjem</a></li>
+                    <li><a href="">Om meg</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hei!<br>Velkommen til min nettside</h1>
+
+            </div>
+        </div>
+    </Div>
+<!---------------------About section------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images\Profile picture.webp">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Om Meg</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo vitae ex, quibusdam impedit fugiat doloribus ipsum fuga beatae quos voluptatem vel cumque totam enim illum unde consequatur atque natus autem?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('utdanning')">Utdanning</p>
+                        <p class="tab-links"onclick="opentab('Erfaring')">Erfaring</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="utdanning">
+                        <ul>
+                            <li><span>Fullført<br></span> Vg1 Elektro og datateknologi på Elvebakken vgs i tre uker</li>
+                            <li><span>d.d:<br></span> Vg2 Datateknologi og elektronikk på Kuben vgs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Erfaring">
+                        <ul>
+                            <li><span>Utplassering<br></span> Var utplassert på IKT-avdeling på Elvebakken vgs</li>
+                            <li><span>Jobb<br></span> Jobbet på Lektern restaurant i sommeren 2022</li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                </div>
+                </div>
+                    
+        </div>
+
+    </div>
+
+<!--------------projects-------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Mine prosjekter</h1>
+        <div class="projects-list">
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
