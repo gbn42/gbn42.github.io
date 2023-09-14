@@ -47,6 +47,7 @@ nav.sticky ul li a{
 }
 .logo2{
     width: 230px;
+    display: none;
     
 }
 nav ul{
@@ -179,5 +180,17 @@ nav ul li a:hover::after{
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-right: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.projects-list div a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.projects-list div:hover{
+    background-color:#c16d60;
+    transform: translateY(-10px);
 }
